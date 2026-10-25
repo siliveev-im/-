@@ -1,0 +1,48 @@
+<!--meta {"nav": "kontakty", "type": "contact", "crumb": "Контакты", "title": "Контакты: консультация по банкротству в Иркутске — Илья Силивеев", "description": "Записаться на консультацию к арбитражному управляющему, адвокату и медиатору Илье Силивееву: банкротство, долги, корпоративные споры. Иркутск и онлайн."}-->
+<section class="page-hero">
+  <div class="container split">
+    <div>
+      <p class="eyebrow">Контакты</p>
+      <h1>Записаться на консультацию</h1>
+      <p class="lead">Принимаю в {{city}}е и онлайн. Оставьте заявку или напишите — договоримся о времени.</p>
+    </div>
+    <aside class="facts" aria-label="Контакты">
+      <dl>
+        <!--if:phone--><dt>Телефон</dt><dd><a href="{{phoneHref}}">{{phone}}</a></dd><!--endif:phone-->
+        <!--if:email--><dt>Почта</dt><dd><a href="{{emailHref}}">{{email}}</a></dd><!--endif:email-->
+        <!--if:telegramContact--><dt>Telegram</dt><dd><a href="{{telegramContact}}" rel="noopener">Написать сообщение</a></dd><!--endif:telegramContact-->
+        <dt>Канал</dt><dd><a href="{{telegramChannel}}" rel="noopener">Telegram</a><!--if:maxChannel--> · <a href="{{maxChannel}}" rel="noopener">Max</a><!--endif:maxChannel--><!--if:vk--> · <a href="{{vk}}" rel="noopener">VK</a><!--endif:vk--></dd>
+        <dt>Адрес</dt><dd>{{city}}<!--if:address-->, {{address}}<!--endif:address--></dd>
+        <!--if:hours--><dt>Часы приёма</dt><dd>{{hours}}</dd><!--endif:hours-->
+      </dl>
+    </aside>
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="container">
+    <div class="section-head">
+      <h2>Как подготовиться к консультации</h2>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <h3>Компании</h3>
+        <p>Бухгалтерская отчётность за последние год-два, список кредиторов и долгов, кредитные договоры, судебные акты и требования, которые уже пришли.</p>
+      </div>
+      <div class="card">
+        <h3>Кредитору</h3>
+        <p>Договор с должником, документы о долге, судебные акты, номер дела о банкротстве, если оно уже идёт.</p>
+      </div>
+      <div class="card">
+        <h3>В конфликте партнёров</h3>
+        <p>Устав, корпоративный договор, если он есть, и короткое описание: в чём разногласие и чего вы хотите добиться.</p>
+      </div>
+      <div class="card">
+        <h3>Гражданину</h3>
+        <p>Паспорт, список долгов и кредиторов, документы о доходах и имуществе.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--form-->

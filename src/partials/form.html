@@ -1,0 +1,48 @@
+<section class="section section-form" id="zayavka" aria-labelledby="zayavka-title">
+  <div class="container form-grid">
+    <div class="form-intro">
+      <p class="eyebrow">Консультация</p>
+      <h2 id="zayavka-title">Расскажите коротко о ситуации</h2>
+      <p>Я свяжусь с вами, чтобы договориться о встрече: в офисе в Иркутске или онлайн.</p>
+      <p class="muted small">Не присылайте через форму документы и подробности дела — обсудим их на встрече. Так безопаснее для вас.</p>
+      <ul class="contact-mini">
+        <!--if:phone--><li><a href="{{phoneHref}}">{{phone}}</a></li><!--endif:phone-->
+        <!--if:telegramContact--><li><a href="{{telegramContact}}" rel="noopener">Написать в Telegram</a></li><!--endif:telegramContact-->
+        <!--if:email--><li><a href="{{emailHref}}">{{email}}</a></li><!--endif:email-->
+      </ul>
+    </div>
+    <form class="lead-form ym-disable-keys" action="/{{formAction}}" method="post" novalidate>
+      <input type="hidden" name="page" value="{{page}}">
+      <div class="hp" aria-hidden="true"><label>Сайт <input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+      <div class="field">
+        <label for="f-name-{{page}}">Как к вам обращаться</label>
+        <input id="f-name-{{page}}" name="name" type="text" autocomplete="name" required>
+      </div>
+      <div class="field">
+        <label for="f-contact-{{page}}">Телефон или ник в мессенджере</label>
+        <input id="f-contact-{{page}}" name="contact" type="text" autocomplete="tel" required>
+      </div>
+      <div class="field field-wide">
+        <label for="f-topic-{{page}}">Тема</label>
+        <select id="f-topic-{{page}}" name="topic">
+          <option>Бизнес в кризисе, банкротство компании</option>
+          <option>Субсидиарная ответственность, убытки</option>
+          <option>Я кредитор</option>
+          <option>Медиация, корпоративный конфликт</option>
+          <option>Банкротство гражданина</option>
+          <option>Другое</option>
+        </select>
+      </div>
+      <div class="field field-wide">
+        <label for="f-msg-{{page}}">Коротко о вопросе <span class="muted">(необязательно)</span></label>
+        <textarea id="f-msg-{{page}}" name="message" rows="3" maxlength="1000"></textarea>
+      </div>
+      <div class="field field-wide check">
+        <input id="f-consent-{{page}}" name="consent" type="checkbox" value="yes" required>
+        <label for="f-consent-{{page}}">Даю согласие на обработку персональных данных на условиях <a href="/soglasie/" target="_blank">Согласия</a> и <a href="/politika/" target="_blank">Политики</a></label>
+      </div>
+      <p class="form-error" role="alert" hidden></p>
+      <button class="btn" type="submit">Отправить</button>
+    </form>
+  </div>
+</section>

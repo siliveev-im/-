@@ -1,0 +1,18 @@
+{
+ "users": [
+  {
+   "id": "df8e4ea4-b3ac-4305-a5a8-036fe3078561",
+   "login": "siliveev",
+   "name": "Илья Силивеев",
+   "role": "owner",
+   "active": true,
+   "pass": "scrypt$Oe6Nk8Zr2dBGPiTTiFH+hg==$GxCUW24iiyHqGELk0lBwE0OSOGg0UKtFhPtaipb8YHDjenl6zm/XbYhHNWflU3RnN01herNnYg7q7U/UqX5Ejw==",
+   "totp_enabled": false,
+   "created_at": "2026-10-21T11:21:08.803Z",
+   "totp_secret": null,
+   "totp_last": -1,
+   "last_login": "2026-10-21T11:42:36.043Z",
+   "must_change_password": true
+  }
+ ]
+}
